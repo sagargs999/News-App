@@ -1,0 +1,152 @@
+body{
+    font-family:'Poppins',sans-serif;
+    background:#eef4ff;
+}
+
+/* Navbar */
+
+.navbar{
+    background:linear-gradient(90deg,#0f172a,#2563eb);
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.navbar-brand{
+    font-weight:700;
+    font-size:28px;
+}
+
+.nav-link{
+    color:white !important;
+}
+
+.nav-link:hover{
+    color:#FFD54F !important;
+}
+
+/* Cards */
+
+.card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+
+}
+
+/* Images */
+
+.card-img-top{
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+/* Buttons */
+
+.btn-primary{
+
+    background:#2563eb;
+
+    border:none;
+
+    border-radius:30px;
+
+}
+
+.btn-primary:hover{
+
+    background:#1d4ed8;
+
+}
+
+.btn-danger{
+
+    border-radius:30px;
+
+}
+
+/* Category Buttons */
+
+.category-btn{
+
+    border-radius:25px;
+
+    font-weight:600;
+
+    margin:3px;
+
+}
+
+/* Search */
+
+.form-control{
+
+    border-radius:30px;
+
+}
+
+.form-select{
+
+    border-radius:30px;
+
+}
+
+.btn-success{
+
+    border-radius:30px;
+
+}
+
+/* Bookmark Button */
+
+.bookmark-btn{
+
+    transition:.3s;
+
+}
+
+.bookmark-btn:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* Headings */
+
+h2{
+
+    font-weight:700;
+
+}
+
+/* Footer */
+
+footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:25px;
+
+    text-align:center;
+
+    margin-top:60px;
+
+}
