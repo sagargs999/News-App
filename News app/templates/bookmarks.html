@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="mb-4">❤️ My Bookmarks</h2>
+
+<div class="row">
+
+{% if articles %}
+
+    {% for article in articles %}
+
+    <div class="col-md-4 mb-4">
+
+        <div class="card h-100 shadow">
+
+            {% if article.image %}
+            <img src="{{ article.image }}" class="card-img-top">
+            {% endif %}
+
+            <div class="card-body">
+
+                <h5>{{ article.title }}</h5>
+
+                <p>{{ article.description }}</p>
+
+                <div class="d-flex justify-content-between">
+
+    <a href="{{ article.url }}"
+       target="_blank"
+       class="btn btn-primary">
+        Read More
+    </a>
+
+    <form action="{{ url_for('delete_bookmark', id=article.id) }}"
+          method="POST">
+
+        <button class="btn btn-danger">
+            🗑 Remove
+        </button>
+
+    </form>
+
+</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    {% endfor %}
+
+{% else %}
+
+<div class="col-12">
+    <div class="alert alert-info">
+        You haven't bookmarked any articles yet.
+    </div>
+</div>
+
+{% endif %}
+
+</div>
+
+{% endblock %}
