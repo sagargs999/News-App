@@ -5,14 +5,6 @@ A modern Flask-based News Web Application that fetches real-time headlines using
 
 ---
 
-## 📸 Preview
-
-<img width="100%" alt="News With App" src="https://via.placeholder.com/1000x500?text=News+With+App">
-
-> Replace this image with a screenshot of your application after uploading it to GitHub.
-
----
-
 ## ✨ Features
 
 - 🔍 Search news by keyword
